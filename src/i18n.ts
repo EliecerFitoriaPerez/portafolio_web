@@ -13,11 +13,11 @@ export const ui = {
 
     // Hero Section
     'hero.status': 'disponibilidad Inmediata',
-    'hero.title1': 'Software',
-    'hero.title2': 'Developer',
+    'hero.title1': 'Desarrollador',
+    'hero.title2': 'de Software',
     'hero.desc': 'Desarrollador de software enfocado en la arquitectura y construcción de aplicaciones multiplataforma. Me apasiona traducir retos de negocio en código eficiente.',
     'hero.btn.view': 'Ver Proyectos',
-    'hero.btn.cv': 'Descargar CV',
+    'hero.btn.cv': 'DESCARGAR CV',
     'hero.title3': 'Correo',
     'hero.title4': 'Teléfono',
 
@@ -99,7 +99,7 @@ export const ui = {
     'hero.title2': 'Developer',
     'hero.desc': 'Software developer focused on architecture and building multiplatform applications. I am passionate about translating business challenges into efficient code.',
     'hero.btn.view': 'View Projects',
-    'hero.btn.cv': 'Download CV',
+    'hero.btn.cv': 'DOWNLOAD CV',
     'hero.title3': 'Email',
     'hero.title4': 'Phone',
 

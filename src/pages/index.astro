@@ -10,50 +10,105 @@ import Layout from "../layout/Layout.astro";
         EF<span class="text-purple-500">.</span>
       </a>
 
-      <div class="hidden md:flex gap-10 text-xs uppercase tracking-[0.2em] font-medium text-slate-400">
-        <a data-key="nav.about" href="#aboutMe" class="hover:text-purple-400 transition-colors">Acerca de mí</a>
-        <a data-key="nav.stack" href="#stack" class="hover:text-purple-400 transition-colors">Tecnologías</a>
-        <a data-key="nav.projects" href="#proyectos" class="hover:text-purple-400 transition-colors">Proyectos</a>
-        <a data-key="nav.experience" href="#experiencia" class="hover:text-purple-400 transition-colors">Experiencia</a>
-      </div>
+     <div class="hidden md:flex gap-10 text-xs uppercase tracking-[0.2em] font-medium text-slate-400">
+      <a data-key="nav.about" href="#aboutMe" class="hover:text-purple-400 transition-colors">Acerca de mí</a>
+      <a data-key="nav.stack" href="#stack" class="hover:text-purple-400 transition-colors">Tecnologías</a>
+      <a data-key="nav.projects" href="#proyectos" class="hover:text-purple-400 transition-colors">Proyectos</a>
+      <a data-key="nav.experience" href="#experiencia" class="hover:text-purple-400 transition-colors">Experiencia</a>
+    </div>
 
-      <div class="flex items-center gap-3">
+    <div class="relative inline-block text-left" id="dropdown-wrapper">
         <button 
-          id="language-toggle" 
-          class="relative flex items-center bg-white/5 border border-white/10 p-1 rounded-full w-20 h-9 cursor-pointer hover:border-purple-500/50 transition-all duration-300 group"
+          id="btn-dropdown"
+          type="button"
+          class="text-xs font-bold uppercase tracking-widest border border-purple-500/50 bg-purple-500/10 px-6 py-2 rounded-full text-white hover:bg-white hover:text-black hover:border-white transition-all duration-300 shadow-[0_0_15px_rgba(168,85,247,0.15)] flex items-center gap-2 group"
         >
-          <div id="lang-indicator" class="absolute left-1 w-8 h-6.5 bg-purple-600 rounded-full transition-transform duration-300 shadow-[0_0_10px_rgba(168,85,247,0.4)]"></div>
-          <span class="relative z-10 w-1/2 text-[10px] font-black text-center text-white transition-colors">ES</span>
-          <span class="relative z-10 w-1/2 text-[10px] font-black text-center text-slate-400 group-hover:text-slate-200 transition-colors">EN</span>
+          <span data-key="nav.contact">Contacto</span>
+          <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-300" id="icon-arrow"></i>
         </button>
 
-        <div class="relative hidden sm:inline-block text-left" id="dropdown-wrapper">
-          <button 
-            id="btn-dropdown"
-            type="button"
-            class="text-xs font-bold uppercase tracking-widest border border-purple-500/50 bg-purple-500/10 px-6 py-2 rounded-full text-white hover:bg-white hover:text-black hover:border-white transition-all duration-300 shadow-[0_0_15px_rgba(168,85,247,0.15)] flex items-center gap-2 group"
-          >
-            <span data-key="nav.contact">Contacto</span>
-            <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-300" id="icon-arrow"></i>
-          </button>
+        <div id="menu-dropdown" class="absolute right-0 mt-3 w-52 rounded-2xl border border-white/10 bg-[#0a0a0a]/95 backdrop-blur-xl p-2 shadow-2xl opacity-0 scale-95 pointer-events-none transition-all duration-300 z-100">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fitoriaperezeliecer@gmail.com" target="_blank" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm text-slate-300 hover:bg-purple-500/10 hover:text-white transition-colors">
+            <i class="fa-solid fa-envelope text-purple-400"></i>
+            <span data-key="nav.email">Enviar Email</span>
+          </a>
 
-          <div id="menu-dropdown" class="absolute right-0 mt-3 w-52 rounded-2xl border border-white/10 bg-[#0a0a0a]/95 backdrop-blur-xl p-2 shadow-2xl opacity-0 scale-95 pointer-events-none transition-all duration-300 z-100">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fitoriaperezeliecer@gmail.com" target="_blank" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm text-slate-300 hover:bg-purple-500/10 hover:text-white transition-colors">
-              <i class="fa-solid fa-envelope text-purple-400"></i>
-              <span data-key="nav.email">Enviar Email</span>
-            </a>
-            <a href="https://wa.me/50663332151" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm text-slate-300 hover:bg-green-500/10 hover:text-white transition-colors">
-              <i class="fa-brands fa-whatsapp text-green-400"></i>
-              <span data-key="nav.whatsapp">WhatsApp</span>
-            </a>
-          </div>
+          <a href="https://wa.me/50663332151" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm text-slate-300 hover:bg-green-500/10 hover:text-white transition-colors">
+            <i class="fa-brands fa-whatsapp text-green-400"></i>
+            <span data-key="nav.whatsapp">WhatsApp</span>
+          </a>
         </div>
-
-        
       </div>
+
+    <div class="flex items-center gap-3">
+      <button id="language-toggle" class="relative flex items-center bg-white/5 border border-white/10 p-1 rounded-full w-20 h-9 cursor-pointer hover:border-purple-500/50 transition-all duration-300 group">
+        <div id="lang-indicator" class="absolute left-1 w-8 h-6.5 bg-purple-600 rounded-full transition-transform duration-300 shadow-[0_0_10px_rgba(168,85,247,0.4)]"></div>
+        <span class="relative z-10 w-1/2 text-[10px] font-black text-center text-white transition-colors">ES</span>
+        <span class="relative z-10 w-1/2 text-[10px] font-black text-center text-slate-400 group-hover:text-slate-200 transition-colors">EN</span>
+      </button>
+
+      <button id="mobile-menu-btn" class="md:hidden text-white text-2xl p-2 focus:outline-none">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+    </div>
+
     </nav>
 
-  </header>
+</header>  
+
+  <div id="menu-overlay" class="fixed inset-0 bg-black/80 backdrop-blur-md z-90 hidden transition-opacity duration-300 opacity-0 md:hidden"></div>
+
+  <div id="mobile-menu" class="fixed inset-y-0 right-0 w-280px bg-black/95 z-100 border-l border-white/10 transition-transform duration-500 ease-in-out translate-x-full md:hidden flex flex-col shadow-[-20px_0_80px_rgba(0,0,0,0.9)] backdrop-blur-xl">
+    
+    <div class="flex justify-end p-6 h-80px">
+      <button id="close-menu" class="text-white hover:text-purple-500 transition-colors p-2">
+        <i class="fa-solid fa-xmark text-3xl"></i>
+      </button>
+    </div>
+
+    <div class="flex flex-col flex-1 px-8 pb-10">
+      <nav class="flex flex-col gap-8 items-end pt-4">
+        
+        <a href="#aboutMe" class="mobile-link group flex items-center gap-4 text-sm font-bold tracking-[0.2em] uppercase text-white/70 hover:text-white transition-all">
+          <div class="w-1.5 h-1.5 rounded-full bg-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <span data-key="nav.about">Acerca de mí</span>
+        </a>
+
+        <a href="#stack" class="mobile-link group flex items-center gap-4 text-sm font-bold tracking-[0.2em] uppercase text-white/70 hover:text-white transition-all">
+        <div class="w-1.5 h-1.5 rounded-full bg-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        <span data-key="nav.stack">Tecnologías</span>
+        </a>
+
+        <a href="#proyectos" class="mobile-link group flex items-center gap-4 text-sm font-bold tracking-[0.2em] uppercase text-white/70 hover:text-white transition-all">
+        <div class="w-1.5 h-1.5 rounded-full bg-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        <span data-key="nav.projects">Proyectos</span>
+        </a>
+
+        <a href="#experiencia" class="mobile-link group flex items-center gap-4 text-sm font-bold tracking-[0.2em] uppercase text-white/70 hover:text-white transition-all">
+        <div class="w-1.5 h-1.5 rounded-full bg-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        <span data-key="nav.experience">Experiencia</span>
+        </a>
+
+        <div class="w-full flex flex-col gap-6 items-end border-t border-white/10 pt-8 mt-4">
+          <p class="text-[10px] uppercase tracking-[0.3em] text-slate-500 mb-2">Contacto</p>
+          
+          <a href="https://wa.me/50663332151" target="_blank" class="mobile-link flex items-center gap-4 text-xs font-bold text-green-400">
+            <span>WhatsApp</span>
+            <div class="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center border border-green-500/20">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+            </div>
+          </a>
+
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fitoriaperezeliecer@gmail.com" target="_blank" class="mobile-link flex items-center gap-4 text-xs font-bold text-purple-400">
+            <span>Email</span>
+            <div class="w-10 h-10 rounded-full bg-purple-500/10 flex items-center justify-center border border-purple-500/20">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
 
   <main class="bg-[#050505] text-white">
 
@@ -71,9 +126,9 @@ import Layout from "../layout/Layout.astro";
           </div>
 
           <h1 class="text-5xl sm:text-6xl md:text-8xl font-extrabold tracking-tighter leading-tight md:leading-none">
-            <span data-key="hero.title1">Software</span> <br /> 
+            <span data-key="hero.title1">Desarrollador</span> <br /> 
             <span data-key="hero.title2" class="text-transparent bg-clip-text bg-linear-to-r from-slate-200 via-purple-400 to-slate-500">
-              Developer
+              de Software
             </span>
           </h1>
 
@@ -87,8 +142,8 @@ import Layout from "../layout/Layout.astro";
                 <span data-key="hero.btn.view" class="relative z-10 text-sm uppercase tracking-bold">Ver Proyectos</span>
                 <div class="absolute inset-0 bg-purple-700 translate-y-full group-hover:translate-y-[0%] transition-transform duration-300"></div>
               </a>
-              <a data-key="hero.btn.cv" href="/cv/CV_Eliecer_Fitoria.pdf" download class="px-8 py-4 border border-white/10 rounded-xl text-sm uppercase tracking-widest font-bold hover:bg-white/5 transition-all text-white flex-1 sm:flex-none text-center">
-                Descargar CV
+              <a id="download_cv" href="/cv/cv_espanol.pdf" download="CV_Eliecer_Fitoria_ES.pdf" data-key="hero.btn.cv" class="flex items-center justify-center bg-black border border-white/10 text-white px-8 py-4 rounded-xl font-bold tracking-widest text-xs hover:bg-white hover:text-black transition-all duration-300">
+                DESCARGAR CV
               </a>
             </div>
 
@@ -113,11 +168,14 @@ import Layout from "../layout/Layout.astro";
         </div>
 
         <div class="relative group max-w-sm w-full mx-auto md:mx-0">
-          <div class="absolute -inset-1 bg-linear-to-r from-purple-600 to-blue-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+          <div class="absolute -inset-1 bg-linear-to-r from-purple-600 to-blue-600 rounded-2xl blur opacity-30 md:opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+          
           <img
             src="/img/fotoCV.jpg"
             alt="Eliecer Fitoria"
-            class="relative w-full aspect-4/5 object-cover rounded-2xl grayscale contrast-125 hover:grayscale-0 transition-all duration-700 shadow-2xl"
+            class="relative w-full aspect-4/5 object-cover rounded-2xl 
+                  grayscale-0 md:grayscale md:contrast-125 
+                  hover:grayscale-0 transition-all duration-400 shadow-2xl"
           />
         </div>
       </div>
@@ -230,33 +288,63 @@ import Layout from "../layout/Layout.astro";
         <div class="absolute inset-y-0 right-0 w-20 bg-linear-to-l from-[#050505] to-transparent z-10"></div>
 
         <div class="flex marquee-container">
-            <div class="flex items-center gap-20 marquee-content">
-                <i class="fa-brands fa-java text-3xl text-slate-500 hover:text-orange-500 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-laravel text-3xl text-slate-500 hover:text-red-500 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-php text-3xl text-slate-500 hover:text-indigo-400 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-node-js text-3xl text-slate-500 hover:text-green-500 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-python text-3xl text-slate-500 hover:text-yellow-500 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-react text-3xl text-slate-500 hover:text-cyan-400 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-angular text-3xl text-slate-500 hover:text-red-600 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-vuejs text-3xl text-slate-500 hover:text-emerald-500 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-js text-3xl text-slate-500 hover:text-yellow-400 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-bootstrap text-3xl text-slate-500 hover:text-purple-600 transition-all duration-300 hover:scale-110"></i> 
-                <i class="fa-brands fa-github text-3xl text-slate-500 hover:text-white transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-solid fa-database text-3xl text-slate-500 hover:text-blue-400 transition-all duration-300 hover:scale-110"></i>
+            <div class="flex items-center gap-8 md:gap-12 marquee-content">
+                <i class="fa-brands fa-java text-3xl md:text-4xl text-slate-500 hover:text-orange-500 transition-all duration-300 hover:scale-110"></i>
+                <i class="fa-brands fa-laravel text-3xl md:text-4xl text-slate-500 hover:text-red-500 transition-all duration-300 hover:scale-110"></i>
+                <i class="fa-brands fa-php text-3xl md:text-4xl text-slate-500 hover:text-indigo-400 transition-all duration-300 hover:scale-110"></i>
+                <i class="fa-brands fa-python text-3xl md:text-4xl text-slate-500 hover:text-yellow-500 transition-all duration-300 hover:scale-110"></i>
+                
+                <div class="text-slate-500 hover:text-purple-500 transition-all duration-300 hover:scale-110 font-black text-2xl md:text-3xl">.NET</div>
+                
+                <i class="fa-brands fa-react text-3xl md:text-4xl text-slate-500 hover:text-cyan-400 transition-all duration-300 hover:scale-110"></i>
+                <i class="fa-brands fa-angular text-3xl md:text-4xl text-slate-500 hover:text-red-600 transition-all duration-300 hover:scale-110"></i>
+                <i class="fa-brands fa-vuejs text-3xl md:text-4xl text-slate-500 hover:text-emerald-500 transition-all duration-300 hover:scale-110"></i>
+                
+                <div class="flex items-center gap-1 text-slate-500 hover:text-blue-400 transition-all duration-300 hover:scale-110">
+                    <i class="fa-solid fa-mobile-screen-button text-2xl md:text-3xl"></i>
+                    <span class="text-[10px] font-bold uppercase">Flutter</span>
+                </div>
+
+                <i class="fa-brands fa-js text-3xl md:text-4xl text-slate-500 hover:text-yellow-400 transition-all duration-300 hover:scale-110"></i>
+                <div class="flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-slate-500 hover:bg-[#3178C6] rounded-sm transition-all duration-300 hover:scale-110">
+                    <span class="text-black font-bold text-lg md:text-xl">TS</span>
+                </div>
+                
+                <div class="flex items-center gap-1 text-slate-500 hover:text-orange-400 transition-all duration-300 hover:scale-110">
+                    <i class="fa-solid fa-rocket text-2xl md:text-3xl"></i>
+                    <span class="text-[10px] font-bold uppercase">Astro</span>
+                </div>
+                <i class="fa-solid fa-wind text-3xl md:text-4xl text-slate-500 hover:text-sky-400 transition-all duration-300 hover:scale-110"></i>
+
+                <i class="fa-solid fa-database text-3xl md:text-4xl text-slate-500 hover:text-blue-400 transition-all duration-300 hover:scale-110"></i>
+                
+                <i class="fa-brands fa-github text-3xl md:text-4xl text-slate-500 hover:text-white transition-all duration-300 hover:scale-110"></i>
             </div>
-            <div class="flex items-center gap-20 marquee-content" aria-hidden="true">
-                <i class="fa-brands fa-java text-3xl text-slate-500 hover:text-orange-500 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-laravel text-3xl text-slate-500 hover:text-red-500 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-php text-3xl text-slate-500 hover:text-indigo-400 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-node-js text-3xl text-slate-500 hover:text-green-500 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-python text-3xl text-slate-500 hover:text-yellow-500 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-react text-3xl text-slate-500 hover:text-cyan-400 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-angular text-3xl text-slate-500 hover:text-red-600 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-vuejs text-3xl text-slate-500 hover:text-emerald-500 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-js text-3xl text-slate-500 hover:text-yellow-400 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-bootstrap text-3xl text-slate-500 hover:text-purple-600 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-github text-3xl text-slate-500 hover:text-white transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-solid fa-database text-3xl text-slate-500 hover:text-blue-400 transition-all duration-300 hover:scale-110"></i>
+
+            <div class="flex items-center gap-8 md:gap-12 marquee-content" aria-hidden="true">
+                <i class="fa-brands fa-java text-3xl md:text-4xl text-slate-500 hover:text-orange-500 transition-all duration-300 hover:scale-110"></i>
+                <i class="fa-brands fa-laravel text-3xl md:text-4xl text-slate-500 hover:text-red-500 transition-all duration-300 hover:scale-110"></i>
+                <i class="fa-brands fa-php text-3xl md:text-4xl text-slate-500 hover:text-indigo-400 transition-all duration-300 hover:scale-110"></i>
+                <i class="fa-brands fa-python text-3xl md:text-4xl text-slate-500 hover:text-yellow-500 transition-all duration-300 hover:scale-110"></i>
+                <div class="text-slate-500 hover:text-purple-500 transition-all duration-300 hover:scale-110 font-black text-2xl md:text-3xl">.NET</div>
+                <i class="fa-brands fa-react text-3xl md:text-4xl text-slate-500 hover:text-cyan-400 transition-all duration-300 hover:scale-110"></i>
+                <i class="fa-brands fa-angular text-3xl md:text-4xl text-slate-500 hover:text-red-600 transition-all duration-300 hover:scale-110"></i>
+                <i class="fa-brands fa-vuejs text-3xl md:text-4xl text-slate-500 hover:text-emerald-500 transition-all duration-300 hover:scale-110"></i>
+                <div class="flex items-center gap-1 text-slate-500 hover:text-blue-400 transition-all duration-300 hover:scale-110">
+                    <i class="fa-solid fa-mobile-screen-button text-2xl md:text-3xl"></i>
+                    <span class="text-[10px] font-bold uppercase">Flutter</span>
+                </div>
+                <i class="fa-brands fa-js text-3xl md:text-4xl text-slate-500 hover:text-yellow-400 transition-all duration-300 hover:scale-110"></i>
+                <div class="flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-slate-500 hover:bg-[#3178C6] rounded-sm transition-all duration-300 hover:scale-110">
+                    <span class="text-black font-bold text-lg md:text-xl">TS</span>
+                </div>
+                <div class="flex items-center gap-1 text-slate-500 hover:text-orange-400 transition-all duration-300 hover:scale-110">
+                    <i class="fa-solid fa-rocket text-2xl md:text-3xl"></i>
+                    <span class="text-[10px] font-bold uppercase">Astro</span>
+                </div>
+                <i class="fa-solid fa-wind text-3xl md:text-4xl text-slate-500 hover:text-sky-400 transition-all duration-300 hover:scale-110"></i>
+                <i class="fa-solid fa-database text-3xl md:text-4xl text-slate-500 hover:text-blue-400 transition-all duration-300 hover:scale-110"></i>
+                <i class="fa-brands fa-github text-3xl md:text-4xl text-slate-500 hover:text-white transition-all duration-300 hover:scale-110"></i>
             </div>
         </div>
     </div>
@@ -484,9 +572,10 @@ import Layout from "../layout/Layout.astro";
     to { transform: translateX(-100%); }
   }
 
-  .marquee-container:hover .marquee-content {
+  /*.marquee-container:hover .marquee-content {
     animation-play-state: paused;
-  }
+  }*/
+
 </style>
 
 <script>
@@ -498,13 +587,13 @@ import Layout from "../layout/Layout.astro";
   const langBtn = document.getElementById("language-toggle");
   const langIndicator = document.getElementById("lang-indicator");
   const langTexts = langBtn?.querySelectorAll('span');
+  const  downloadCvBtn = document.getElementById('download_cv') as HTMLAnchorElement;
 
   function updateContent(lang: Language) {
     const elements = document.querySelectorAll("[data-key]");
     
     elements.forEach((el) => {
       const key = el.getAttribute("data-key") as keyof (typeof ui)["es"];
-      // @ts-ignore
       const translation = ui[lang][key];
 
       if (translation) {
@@ -517,6 +606,11 @@ import Layout from "../layout/Layout.astro";
     });
 
     document.documentElement.lang = lang;
+
+    if (downloadCvBtn) {
+      downloadCvBtn.href = lang === "en" ? "/cv/cv_ingles.pdf" : "/cv/cv_espanol.pdf";
+      downloadCvBtn.download = lang === "en" ? "Eliecer_Fitoria_CV.pdf" : "Eliecer_Fitoria_CV.pdf";
+    }
 
     if (langIndicator && langTexts) {
       if (lang === "en") {
@@ -536,11 +630,13 @@ import Layout from "../layout/Layout.astro";
     updateContent(currentLang);
   });
 
+  updateContent(currentLang); // Cargar traducción inicial
 
   // --- 3. LÓGICA DEL DROPDOWN DE CONTACTO ---
   const btnDropdown = document.getElementById('btn-dropdown');
   const menuDropdown = document.getElementById('menu-dropdown');
   const iconArrow = document.getElementById('icon-arrow');
+
 
   btnDropdown?.addEventListener('click', (e) => {
     e.stopPropagation();
@@ -570,5 +666,48 @@ import Layout from "../layout/Layout.astro";
   backToTop?.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const closeMenuBtn = document.getElementById('close-menu');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuOverlay = document.getElementById('menu-overlay');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  function openMenu() {
+    mobileMenu?.classList.remove('translate-x-full');
+    menuOverlay?.classList.remove('hidden');
+    
+    // Animación suave de entrada del fondo oscuro
+    setTimeout(() => {
+      menuOverlay?.classList.add('opacity-100');
+    }, 10);
+
+    // Bloquear scroll de la página (no añadimos blur al main)
+    document.body.classList.add('overflow-hidden');
+  }
+
+  function closeMenu() {
+    mobileMenu?.classList.add('translate-x-full');
+    menuOverlay?.classList.remove('opacity-100');
+    
+    // Restaurar scroll
+    document.body.classList.remove('overflow-hidden');
+
+    // Ocultar del DOM tras la animación
+    setTimeout(() => {
+      menuOverlay?.classList.add('hidden');
+    }, 300);
+  }
+
+  // EVENTOS: Ahora menuOverlay detecta clics en toda la pantalla
+  mobileMenuBtn?.addEventListener('click', openMenu);
+  closeMenuBtn?.addEventListener('click', closeMenu);
+  menuOverlay?.addEventListener('click', closeMenu);
+
+  // Cerrar al hacer clic en cualquier link
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
 </script>
 
