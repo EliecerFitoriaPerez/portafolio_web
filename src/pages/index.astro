@@ -224,7 +224,7 @@ import Layout from "../layout/Layout.astro";
           <i class="fa-solid fa-server text-3xl text-purple-500 mb-6"></i>
           <h4 data-key="stack.cat1" class="text-xl font-bold mb-4 text-white">Backend & Lenguajes</h4>
           <div class="flex flex-wrap gap-2">
-            {['Java', '.NET', '.NET Core', 'PHP', 'Laravel', 'Node.js', 'Python', 'TypeScript'].map(tech => (
+            {['Java', '.NET', '.NET Core', 'VB.NET', 'PHP', 'Laravel', 'Node.js', 'Python', 'TypeScript'].map(tech => (
               <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-[11px] text-slate-400 font-medium hover:text-white hover:bg-purple-500/20 transition-colors">{tech}</span>
             ))}
           </div>
@@ -293,31 +293,25 @@ import Layout from "../layout/Layout.astro";
                 <i class="fa-brands fa-laravel text-3xl md:text-4xl text-slate-500 hover:text-red-500 transition-all duration-300 hover:scale-110"></i>
                 <i class="fa-brands fa-php text-3xl md:text-4xl text-slate-500 hover:text-indigo-400 transition-all duration-300 hover:scale-110"></i>
                 <i class="fa-brands fa-python text-3xl md:text-4xl text-slate-500 hover:text-yellow-500 transition-all duration-300 hover:scale-110"></i>
-                
                 <div class="text-slate-500 hover:text-purple-500 transition-all duration-300 hover:scale-110 font-black text-2xl md:text-3xl">.NET</div>
-                
+                <div class="text-slate-500 hover:text-purple-500 transition-all duration-300 hover:scale-110 font-black text-2xl md:text-3xl">VB.NET</div>               
                 <i class="fa-brands fa-react text-3xl md:text-4xl text-slate-500 hover:text-cyan-400 transition-all duration-300 hover:scale-110"></i>
                 <i class="fa-brands fa-angular text-3xl md:text-4xl text-slate-500 hover:text-red-600 transition-all duration-300 hover:scale-110"></i>
-                <i class="fa-brands fa-vuejs text-3xl md:text-4xl text-slate-500 hover:text-emerald-500 transition-all duration-300 hover:scale-110"></i>
-                
+                <i class="fa-brands fa-vuejs text-3xl md:text-4xl text-slate-500 hover:text-emerald-500 transition-all duration-300 hover:scale-110"></i>               
                 <div class="flex items-center gap-1 text-slate-500 hover:text-blue-400 transition-all duration-300 hover:scale-110">
                     <i class="fa-solid fa-mobile-screen-button text-2xl md:text-3xl"></i>
                     <span class="text-[10px] font-bold uppercase">Flutter</span>
                 </div>
-
                 <i class="fa-brands fa-js text-3xl md:text-4xl text-slate-500 hover:text-yellow-400 transition-all duration-300 hover:scale-110"></i>
                 <div class="flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-slate-500 hover:bg-[#3178C6] rounded-sm transition-all duration-300 hover:scale-110">
                     <span class="text-black font-bold text-lg md:text-xl">TS</span>
-                </div>
-                
+                </div>       
                 <div class="flex items-center gap-1 text-slate-500 hover:text-orange-400 transition-all duration-300 hover:scale-110">
                     <i class="fa-solid fa-rocket text-2xl md:text-3xl"></i>
                     <span class="text-[10px] font-bold uppercase">Astro</span>
                 </div>
                 <i class="fa-solid fa-wind text-3xl md:text-4xl text-slate-500 hover:text-sky-400 transition-all duration-300 hover:scale-110"></i>
-
-                <i class="fa-solid fa-database text-3xl md:text-4xl text-slate-500 hover:text-blue-400 transition-all duration-300 hover:scale-110"></i>
-                
+                <i class="fa-solid fa-database text-3xl md:text-4xl text-slate-500 hover:text-blue-400 transition-all duration-300 hover:scale-110"></i>               
                 <i class="fa-brands fa-github text-3xl md:text-4xl text-slate-500 hover:text-white transition-all duration-300 hover:scale-110"></i>
             </div>
 
@@ -609,7 +603,7 @@ import Layout from "../layout/Layout.astro";
 
     if (downloadCvBtn) {
       downloadCvBtn.href = lang === "en" ? "/cv/cv_ingles.pdf" : "/cv/cv_espanol.pdf";
-      downloadCvBtn.download = lang === "en" ? "Eliecer_Fitoria_CV.pdf" : "Eliecer_Fitoria_CV.pdf";
+      downloadCvBtn.download = lang === "en" ? "CV_Eliecer_Fitoria.pdf" : "CV_Eliecer_Fitoria.pdf";
     }
 
     if (langIndicator && langTexts) {
