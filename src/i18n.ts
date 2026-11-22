@@ -7,15 +7,16 @@ export const ui = {
     'nav.stack': 'Tecnologías',
     'nav.projects': 'Proyectos',
     'nav.experience': 'Experiencia',
+    'nav.education': 'Formación',
     'nav.contact': 'Contacto',
     'nav.email': 'Enviar Email',
     'nav.whatsapp': 'WhatsApp',
 
     // Hero Section
-    'hero.status': 'disponibilidad Inmediata',
-    'hero.title1': 'Desarrollador',
-    'hero.title2': 'de Software',
-    'hero.desc': 'Desarrollador de software enfocado en la arquitectura y construcción de aplicaciones multiplataforma. Me apasiona traducir retos de negocio en código eficiente.',
+    'hero.status': 'Actualmente en Babel',
+    'hero.title1': 'QA Funcional',
+    'hero.title2': 'y Automatización',
+    'hero.desc': 'Especialista de calidad de software con experiencia en pruebas funcionales y de regresión, validación de APIs y automatización E2E. Combino mi formación en desarrollo con un enfoque en entregar software confiable.',
     'hero.btn.view': 'Ver Proyectos',
     'hero.btn.cv': 'DESCARGAR CV',
     'hero.title3': 'Correo',
@@ -23,15 +24,16 @@ export const ui = {
 
     // About Me
     'about.subtitle': 'Perfil Profesional',
-    'about.p1': '"Bachiller en Informática Empresarial de la <span class="text-white font-medium">Universidad de Costa Rica</span>, mi propósito es transformar desafíos técnicos en herramientas digitales que realmente faciliten la operación de un negocio."',
-    'about.p2': 'Me considero un desarrollador versátil con una base sólida en el desarrollo integral de aplicaciones. Disfruto trabajar en todo el ciclo de vida de un proyecto, desde la lógica del servidor con <span class="text-purple-400">.NET Core, Java y Laravel</span>, hasta la creación de interfaces dinámicas y funcionales con <span class="text-purple-400">React, Vue.js y Flutter</span>. Mi experiencia con <span class="text-white">SQL Server y MySQL</span> me permite asegurar que la información fluya de manera eficiente y segura.',
-    'about.p3': 'Valoro profundamente el trabajo bajo metodologías <span class="text-white font-medium">SCRUM</span>, ya que creo que la comunicación y el orden son las claves para entregar productos de calidad.',
-    'about.stat1': 'Formación Académica',
+    'about.p1': 'Bachiller Universitario en Informática Empresarial de la <span class="text-white font-medium">Universidad de Costa Rica</span> y miembro del <span class="text-white font-medium">Colegio de Profesionales en Informática y Computación (CPIC)</span>.',
+    'about.p2': 'Actualmente trabajo en Babel como <span class="text-purple-400">Quality Assurance Functional Specialist</span>. Analizo requerimientos, diseño y ejecuto pruebas funcionales y de regresión, documento defectos y participo en la validación de APIs y en la automatización de pruebas.',
+    'about.p3': 'Mi experiencia previa en desarrollo de software me ayuda a comprender los sistemas desde distintas perspectivas. Utilizo herramientas como <span class="text-white font-medium">Postman, JMeter, Playwright y Selenium WebDriver</span>, y trabajo con equipos ágiles mediante <span class="text-white font-medium">Azure DevOps y SCRUM</span>.',
+    'about.stat1': 'Bachiller universitario',
     'about.stat2': 'Nivel de Inglés',
-    'about.stat3': 'Stack Developer',
+    'about.stat3': 'Enfoque profesional',
 
     // Stack
     'stack.subtitle': 'Especialización',
+    'stack.cat0': 'QA & Automatización',
     'stack.title': 'Stack Tecnológico',
     'stack.cat1': 'Backend & Lenguajes',
     'stack.cat2': 'Frontend',
@@ -42,6 +44,18 @@ export const ui = {
     'stack.scrum': 'SCRUM',
     'stack.items': 'Gestión de ítems',
     'stack.version': 'Control de versiones',
+
+    // Education
+    'education.subtitle': 'Formación y credenciales',
+    'education.title': 'Estudios y certificaciones',
+    'education.degree.title': 'Bachiller Universitario en Informática Empresarial',
+    'education.degree.detail': 'Universidad de Costa Rica (UCR)',
+    'education.membership.title': 'Miembro colegiado',
+    'education.membership.detail': 'Colegio de Profesionales en Informática y Computación (CPIC)',
+    'education.cert1.title': 'ISTQB Certified Tester Foundation Level',
+    'education.cert1.detail': 'Certificación Foundation Level (CTFL)',
+    'education.cert2.title': 'ISTQB Certified Tester Acceptance Testing',
+    'education.cert2.detail': 'Certificación Acceptance Testing (CT-AcT)',
 
     // Projects
     'projects.subtitle': 'Portafolio',
@@ -60,6 +74,15 @@ export const ui = {
     'projects.p5.estitle': 'Escritorio',
     'projects.p5.title': 'Gestión de Inventario',
     'projects.p5.desc': 'Software robusto de escritorio para control de ventas y stock en tiendas de ropa, desarrollado con enfoque en rapidez operativa.',
+
+    // Current Role
+    'exp.0.dates': 'Jul 2026 — Actualidad',
+    'exp.0.role': 'Quality Assurance Functional Specialist',
+    'exp.0.place': 'Babel',
+    'exp.0.i1': 'Analizo historias de usuario y criterios de aceptación para definir escenarios de prueba.',
+    'exp.0.i2': 'Diseño y ejecuto pruebas funcionales y de regresión; documento defectos y resultados en Azure DevOps.',
+    'exp.0.i3': 'Valido servicios y APIs con Postman y realizo pruebas de rendimiento con JMeter.',
+    'exp.0.i4': 'Aplico automatización de pruebas E2E con Playwright y Selenium WebDriver en C#/.NET.',
 
     // Experience
     'exp.subtitle': 'Trayectoria',
@@ -89,15 +112,16 @@ export const ui = {
     'nav.stack': 'Tech Stack',
     'nav.projects': 'Projects',
     'nav.experience': 'Experience',
+    'nav.education': 'Education',
     'nav.contact': 'Contact',
     'nav.email': 'Send Email',
     'nav.whatsapp': 'WhatsApp',
 
     // Hero Section
-    'hero.status': 'Immediate availability',
-    'hero.title1': 'Software',
-    'hero.title2': 'Developer',
-    'hero.desc': 'Software developer focused on architecture and building multiplatform applications. I am passionate about translating business challenges into efficient code.',
+    'hero.status': 'Currently at Babel',
+    'hero.title1': 'Functional QA',
+    'hero.title2': '& Test Automation',
+    'hero.desc': 'Software quality specialist experienced in functional and regression testing, API validation, and end-to-end test automation. I combine a software development background with a focus on delivering reliable software.',
     'hero.btn.view': 'View Projects',
     'hero.btn.cv': 'DOWNLOAD CV',
     'hero.title3': 'Email',
@@ -105,15 +129,16 @@ export const ui = {
 
     // About Me
     'about.subtitle': 'Professional Profile',
-    'about.p1': '"Bachelor in Business Informatics from the <span class="text-white font-medium">University of Costa Rica</span>, my purpose is to transform technical challenges into digital tools that truly facilitate business operations."',
-    'about.p2': 'I consider myself a versatile developer with a solid foundation in end-to-end application development. I enjoy working across the entire project lifecycle, from server-side logic with <span class="text-purple-400">.NET Core, Java, and Laravel</span>, to creating dynamic and functional interfaces with <span class="text-purple-400">React, Vue.js, and Flutter</span>. My experience with <span class="text-white">SQL Server and MySQL</span> allows me to ensure information flows efficiently and securely.',
-    'about.p3': 'I deeply value working under <span class="text-white font-medium">SCRUM</span> methodologies, as I believe communication and order are key to delivering quality products.',
-    'about.stat1': 'Academic Background',
+    'about.p1': 'Bachelor\'s degree in Business Informatics from the <span class="text-white font-medium">University of Costa Rica</span> and member of the <span class="text-white font-medium">Professional Association of Informatics and Computing (CPIC)</span>.',
+    'about.p2': 'I currently work at Babel as a <span class="text-purple-400">Quality Assurance Functional Specialist</span>. I analyze requirements, design and execute functional and regression tests, document defects, and contribute to API validation and test automation.',
+    'about.p3': 'My previous software development experience helps me understand systems from different perspectives. I work with tools such as <span class="text-white font-medium">Postman, JMeter, Playwright, and Selenium WebDriver</span>, and collaborate with agile teams using <span class="text-white font-medium">Azure DevOps and SCRUM</span>.',
+    'about.stat1': 'Bachelor\'s degree',
     'about.stat2': 'English Level',
-    'about.stat3': 'Stack Developer',
+    'about.stat3': 'Professional focus',
 
     // Stack
     'stack.subtitle': 'Specialization',
+    'stack.cat0': 'QA & Test Automation',
     'stack.title': 'Tech Stack',
     'stack.cat1': 'Backend & Languages',
     'stack.cat2': 'Frontend',
@@ -124,6 +149,18 @@ export const ui = {
     'stack.scrum': 'SCRUM',
     'stack.items': 'Item Management',
     'stack.version': 'Version Control',
+
+    // Education
+    'education.subtitle': 'Education and credentials',
+    'education.title': 'Degrees and certifications',
+    'education.degree.title': 'Bachelor\'s in Business Informatics',
+    'education.degree.detail': 'University of Costa Rica (UCR)',
+    'education.membership.title': 'Professional association member',
+    'education.membership.detail': 'Professional Association of Informatics and Computing (CPIC)',
+    'education.cert1.title': 'ISTQB Certified Tester Foundation Level',
+    'education.cert1.detail': 'Foundation Level certification (CTFL)',
+    'education.cert2.title': 'ISTQB Certified Tester Acceptance Testing',
+    'education.cert2.detail': 'Acceptance Testing certification (CT-AcT)',
 
     // Projects
     'projects.subtitle': 'Portfolio',
@@ -142,6 +179,15 @@ export const ui = {
     'projects.p5.estitle': 'Desktop',
     'projects.p5.title': 'Inventory Management',
     'projects.p5.desc': 'Robust desktop software for sales and stock control in clothing stores, developed with a focus on operational speed.',
+
+    // Current Role
+    'exp.0.dates': 'Jul 2026 — Present',
+    'exp.0.role': 'Quality Assurance Functional Specialist',
+    'exp.0.place': 'Babel',
+    'exp.0.i1': 'Analyze user stories and acceptance criteria to define test scenarios.',
+    'exp.0.i2': 'Design and execute functional and regression tests; document defects and results in Azure DevOps.',
+    'exp.0.i3': 'Validate services and APIs with Postman and conduct performance testing with JMeter.',
+    'exp.0.i4': 'Apply end-to-end test automation with Playwright and Selenium WebDriver using C#/.NET.',
 
     // Experience
     'exp.subtitle': 'Trajectory',
