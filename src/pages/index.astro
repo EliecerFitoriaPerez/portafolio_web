@@ -222,8 +222,8 @@ import Layout from "../layout/Layout.astro";
 
     <section id="formacion" class="py-24 px-6 max-w-6xl mx-auto border-t border-white/5">
       <h2 data-key="education.subtitle" class="text-xs uppercase tracking-[0.5em] text-purple-500 font-bold mb-4">Formación y credenciales</h2>
-      <h3 data-key="education.title" class="text-4xl font-bold mb-12 tracking-tighter text-white">Estudios y certificaciones<span class="text-purple-500">.</span></h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <h3 data-key="education.title" class="text-4xl font-bold mb-12 tracking-tighter text-white">Estudios, colegiatura y certificaciones<span class="text-purple-500">.</span></h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-16">
         <article class="p-6 md:p-8 bg-white/2 border border-white/5 rounded-3xl hover:border-purple-500/30 transition-colors">
           <i class="fa-solid fa-graduation-cap text-2xl text-purple-400 mb-5"></i>
           <h4 data-key="education.degree.title" class="text-lg font-bold text-white mb-2">Bachiller Universitario en Informática Empresarial</h4>
@@ -234,15 +234,89 @@ import Layout from "../layout/Layout.astro";
           <h4 data-key="education.membership.title" class="text-lg font-bold text-white mb-2">Miembro colegiado</h4>
           <p data-key="education.membership.detail" class="text-sm text-slate-400">Colegio de Profesionales en Informática y Computación (CPIC)</p>
         </article>
-        <article class="p-6 md:p-8 bg-white/2 border border-white/5 rounded-3xl hover:border-purple-500/30 transition-colors">
-          <i class="fa-solid fa-certificate text-2xl text-purple-400 mb-5"></i>
-          <h4 data-key="education.cert1.title" class="text-lg font-bold text-white mb-2">ISTQB Certified Tester Foundation Level</h4>
-          <p data-key="education.cert1.detail" class="text-sm text-slate-400">Certificación Foundation Level (CTFL)</p>
+      </div>
+      <h4 data-key="education.certifications" class="text-xs uppercase tracking-[0.35em] text-slate-400 font-bold mb-6">Certificaciones y formación complementaria</h4>
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+        <article class="min-h-48 p-6 bg-white/2 border border-white/5 rounded-3xl hover:border-purple-500/40 transition-all duration-300">
+          <div class="flex items-start justify-between gap-4 mb-5">
+            <span class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-purple-500/10 text-purple-400"><i class="fa-solid fa-certificate text-lg"></i></span>
+            <span class="rounded-full border border-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-slate-400">ISTQB</span>
+          </div>
+          <h4 data-key="cert.1.title" class="text-base md:text-lg leading-snug font-bold text-white">ISTQB® Certified Tester Foundation Level (v4.0)</h4>
+          <p data-key="cert.1.issuer" class="mt-3 text-sm text-slate-400">ISTQB</p>
+          <p data-key="cert.1.date" class="mt-2 text-xs font-mono uppercase tracking-wider text-purple-300">3 ago. 2026</p>
         </article>
-        <article class="p-6 md:p-8 bg-white/2 border border-white/5 rounded-3xl hover:border-purple-500/30 transition-colors">
-          <i class="fa-solid fa-certificate text-2xl text-purple-400 mb-5"></i>
-          <h4 data-key="education.cert2.title" class="text-lg font-bold text-white mb-2">ISTQB Certified Tester Acceptance Testing</h4>
-          <p data-key="education.cert2.detail" class="text-sm text-slate-400">Certificación Acceptance Testing (CT-AcT)</p>
+        <article class="min-h-48 p-6 bg-white/2 border border-white/5 rounded-3xl hover:border-purple-500/40 transition-all duration-300">
+          <div class="flex items-start justify-between gap-4 mb-5">
+            <span class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-purple-500/10 text-purple-400"><i class="fa-solid fa-certificate text-lg"></i></span>
+            <span class="rounded-full border border-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-slate-400">ISTQB</span>
+          </div>
+          <h4 data-key="cert.2.title" class="text-base md:text-lg leading-snug font-bold text-white">ISTQB® Certified Tester Acceptance Testing (2019)</h4>
+          <p data-key="cert.2.issuer" class="mt-3 text-sm text-slate-400">ISTQB</p>
+          <p data-key="cert.2.date" class="mt-2 text-xs font-mono uppercase tracking-wider text-purple-300">10 ago. 2026</p>
+        </article>
+        <article class="min-h-48 p-6 bg-white/2 border border-white/5 rounded-3xl hover:border-purple-500/40 transition-all duration-300">
+          <div class="flex items-start justify-between gap-4 mb-5">
+            <span class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-purple-500/10 text-purple-400"><i class="fa-solid fa-certificate text-lg"></i></span>
+            <span class="rounded-full border border-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-slate-400">ISTQB</span>
+          </div>
+          <h4 data-key="cert.3.title" class="text-base md:text-lg leading-snug font-bold text-white">ISTQB® Certified Tester Advanced Level Test Automation Engineering (v2.0)</h4>
+          <p data-key="cert.3.issuer" class="mt-3 text-sm text-slate-400">ISTQB</p>
+          <p data-key="cert.3.date" class="mt-2 text-xs font-mono uppercase tracking-wider text-purple-300">11 sept. 2026</p>
+        </article>
+        <article class="min-h-48 p-6 bg-white/2 border border-white/5 rounded-3xl hover:border-purple-500/40 transition-all duration-300">
+          <div class="flex items-start justify-between gap-4 mb-5">
+            <span class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-purple-500/10 text-purple-400"><i class="fa-solid fa-certificate text-lg"></i></span>
+            <span class="rounded-full border border-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-slate-400">SCRUM</span>
+          </div>
+          <h4 data-key="cert.4.title" class="text-base md:text-lg leading-snug font-bold text-white">Scrum Fundamentals Certified (SFC™)</h4>
+          <p data-key="cert.4.issuer" class="mt-3 text-sm text-slate-400">ScrumStudy</p>
+          <p data-key="cert.4.date" class="mt-2 text-xs font-mono uppercase tracking-wider text-purple-300">15 abr. 2026</p>
+        </article>
+        <article class="min-h-48 p-6 bg-white/2 border border-white/5 rounded-3xl hover:border-purple-500/40 transition-all duration-300">
+          <div class="flex items-start justify-between gap-4 mb-5">
+            <span class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-purple-500/10 text-purple-400"><i class="fa-solid fa-certificate text-lg"></i></span>
+            <span class="rounded-full border border-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-slate-400">SIX SIGMA</span>
+          </div>
+          <h4 data-key="cert.5.title" class="text-base md:text-lg leading-snug font-bold text-white">Six Sigma Yellow Belt Professional</h4>
+          <p data-key="cert.5.issuer" class="mt-3 text-sm text-slate-400">6SigmaStudy</p>
+          <p data-key="cert.5.date" class="mt-2 text-xs font-mono uppercase tracking-wider text-purple-300">15 abr. 2026</p>
+        </article>
+        <article class="min-h-48 p-6 bg-white/2 border border-white/5 rounded-3xl hover:border-purple-500/40 transition-all duration-300">
+          <div class="flex items-start justify-between gap-4 mb-5">
+            <span class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-purple-500/10 text-purple-400"><i class="fa-solid fa-certificate text-lg"></i></span>
+            <span class="rounded-full border border-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-slate-400">CURSO</span>
+          </div>
+          <h4 data-key="cert.6.title" class="text-base md:text-lg leading-snug font-bold text-white">Tester</h4>
+          <p data-key="cert.6.issuer" class="mt-3 text-sm text-slate-400">Capacítate para el Empleo · 28 horas</p>
+          <p data-key="cert.6.date" class="mt-2 text-xs font-mono uppercase tracking-wider text-purple-300">Finalizado el 4 may. 2026</p>
+        </article>
+        <article class="min-h-48 p-6 bg-white/2 border border-white/5 rounded-3xl hover:border-purple-500/40 transition-all duration-300">
+          <div class="flex items-start justify-between gap-4 mb-5">
+            <span class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-purple-500/10 text-purple-400"><i class="fa-solid fa-certificate text-lg"></i></span>
+            <span class="rounded-full border border-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-slate-400">CURSO</span>
+          </div>
+          <h4 data-key="cert.7.title" class="text-base md:text-lg leading-snug font-bold text-white">Evaluador de experiencia de usuario (UX)</h4>
+          <p data-key="cert.7.issuer" class="mt-3 text-sm text-slate-400">Capacítate para el Empleo · 24 horas</p>
+          <p data-key="cert.7.date" class="mt-2 text-xs font-mono uppercase tracking-wider text-purple-300">Finalizado el 5 may. 2026</p>
+        </article>
+        <article class="min-h-48 p-6 bg-white/2 border border-white/5 rounded-3xl hover:border-purple-500/40 transition-all duration-300">
+          <div class="flex items-start justify-between gap-4 mb-5">
+            <span class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-purple-500/10 text-purple-400"><i class="fa-solid fa-certificate text-lg"></i></span>
+            <span class="rounded-full border border-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-slate-400">CURSO</span>
+          </div>
+          <h4 data-key="cert.8.title" class="text-base md:text-lg leading-snug font-bold text-white">Administración del tiempo</h4>
+          <p data-key="cert.8.issuer" class="mt-3 text-sm text-slate-400">Capacítate para el Empleo · 17 horas</p>
+          <p data-key="cert.8.date" class="mt-2 text-xs font-mono uppercase tracking-wider text-purple-300">Finalizado el 21 sept. 2026</p>
+        </article>
+        <article class="min-h-48 p-6 bg-white/2 border border-white/5 rounded-3xl hover:border-purple-500/40 transition-all duration-300">
+          <div class="flex items-start justify-between gap-4 mb-5">
+            <span class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-purple-500/10 text-purple-400"><i class="fa-solid fa-certificate text-lg"></i></span>
+            <span class="rounded-full border border-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-slate-400">LIDERAZGO</span>
+          </div>
+          <h4 data-key="cert.9.title" class="text-base md:text-lg leading-snug font-bold text-white">Liderazgo Universitario · Líder de Servicio</h4>
+          <p data-key="cert.9.issuer" class="mt-3 text-sm text-slate-400">Vicerrectoría de Vida Estudiantil, UCR</p>
+          <p data-key="cert.9.date" class="mt-2 text-xs font-mono uppercase tracking-wider text-purple-300">Trayectoria: 2022–2025 · Certificado el 30 abr. 2026</p>
         </article>
       </div>
     </section>
@@ -495,14 +569,15 @@ import Layout from "../layout/Layout.astro";
               <div class="absolute w-3 h-3 bg-purple-500 rounded-full -left-[6.5px] top-2 shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
               <span data-key="exp.0.dates" class="text-xs font-mono text-slate-500 uppercase tracking-widest">Jul 2026 — Actualidad</span>
               <h4 data-key="exp.0.role" class="text-2xl font-bold mt-2 group-hover:text-purple-400 transition-colors text-white">
-                Quality Assurance Functional Specialist
+                Especialista en QA Funcional
               </h4>
               <p data-key="exp.0.place" class="text-lg text-slate-300 font-medium mb-4 italic">Babel</p>
               <ul class="text-slate-400 space-y-3 font-light text-sm max-w-xl">
                 <li data-key="exp.0.i1">Analizo historias de usuario y criterios de aceptación para definir escenarios de prueba.</li>
-                <li data-key="exp.0.i2">Diseño y ejecuto pruebas funcionales y de regresión; documento defectos y resultados en Azure DevOps.</li>
-                <li data-key="exp.0.i3">Valido servicios y APIs con Postman y realizo pruebas de rendimiento con JMeter.</li>
-                <li data-key="exp.0.i4">Aplico automatización de pruebas E2E con Playwright y Selenium WebDriver en C#/.NET.</li>
+                <li data-key="exp.0.i2">Reviso los insumos y analizo incidencias asociadas a datos, bases de datos SQL Server u Oracle, conexiones, versiones y permisos, para identificar su origen antes de pasar la funcionalidad al equipo de UAT.</li>
+                <li data-key="exp.0.i3">Diseño y ejecuto pruebas funcionales y de regresión; registro hallazgos y doy seguimiento a los defectos en Azure DevOps.</li>
+                <li data-key="exp.0.i4">Valido servicios y APIs con Postman y realizo pruebas de rendimiento con JMeter.</li>
+                <li data-key="exp.0.i5">Aplico automatización de pruebas E2E con Playwright y Selenium WebDriver en C#/.NET.</li>
               </ul>
             </div>
 

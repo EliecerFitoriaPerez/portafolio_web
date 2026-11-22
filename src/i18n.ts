@@ -25,7 +25,7 @@ export const ui = {
     // About Me
     'about.subtitle': 'Perfil Profesional',
     'about.p1': 'Bachiller Universitario en Informática Empresarial de la <span class="text-white font-medium">Universidad de Costa Rica</span> y miembro del <span class="text-white font-medium">Colegio de Profesionales en Informática y Computación (CPIC)</span>.',
-    'about.p2': 'Actualmente trabajo en Babel como <span class="text-purple-400">Quality Assurance Functional Specialist</span>. Analizo requerimientos, diseño y ejecuto pruebas funcionales y de regresión, documento defectos y participo en la validación de APIs y en la automatización de pruebas.',
+    'about.p2': 'Actualmente trabajo en Babel como <span class="text-purple-400">Especialista en QA Funcional</span>. Analizo requerimientos, diseño y ejecuto pruebas funcionales y de regresión, documento defectos y participo en la validación de APIs y en la automatización de pruebas.',
     'about.p3': 'Mi experiencia previa en desarrollo de software me ayuda a comprender los sistemas desde distintas perspectivas. Utilizo herramientas como <span class="text-white font-medium">Postman, JMeter, Playwright y Selenium WebDriver</span>, y trabajo con equipos ágiles mediante <span class="text-white font-medium">Azure DevOps y SCRUM</span>.',
     'about.stat1': 'Bachiller universitario',
     'about.stat2': 'Nivel de Inglés',
@@ -47,15 +47,73 @@ export const ui = {
 
     // Education
     'education.subtitle': 'Formación y credenciales',
-    'education.title': 'Estudios y certificaciones',
+    'education.title': 'Estudios, colegiatura y certificaciones',
     'education.degree.title': 'Bachiller Universitario en Informática Empresarial',
     'education.degree.detail': 'Universidad de Costa Rica (UCR)',
     'education.membership.title': 'Miembro colegiado',
     'education.membership.detail': 'Colegio de Profesionales en Informática y Computación (CPIC)',
-    'education.cert1.title': 'ISTQB Certified Tester Foundation Level',
-    'education.cert1.detail': 'Certificación Foundation Level (CTFL)',
-    'education.cert2.title': 'ISTQB Certified Tester Acceptance Testing',
-    'education.cert2.detail': 'Certificación Acceptance Testing (CT-AcT)',
+    'education.cert1.title': 'ISTQB® Certified Tester Foundation Level (v4.0)',
+    'education.cert1.detail': 'ISTQB · 3 ago. 2026',
+    'education.cert2.title': 'ISTQB® Certified Tester Acceptance Testing (2019)',
+    'education.cert2.detail': 'ISTQB · 10 ago. 2026',
+
+    'exp.0.i5': 'Aplico automatización de pruebas E2E con Playwright y Selenium WebDriver en C#/.NET.',
+
+    'education.certifications': 'Certificaciones y formación complementaria',
+
+    'cert.1.title': 'ISTQB® Certified Tester Foundation Level (v4.0)',
+
+    'cert.1.issuer': 'ISTQB',
+
+    'cert.1.date': '3 ago. 2026',
+
+    'cert.2.title': 'ISTQB® Certified Tester Acceptance Testing (2019)',
+
+    'cert.2.issuer': 'ISTQB',
+
+    'cert.2.date': '10 ago. 2026',
+
+    'cert.3.title': 'ISTQB® Certified Tester Advanced Level Test Automation Engineering (v2.0)',
+
+    'cert.3.issuer': 'ISTQB',
+
+    'cert.3.date': '11 sept. 2026',
+
+    'cert.4.title': 'Scrum Fundamentals Certified (SFC™)',
+
+    'cert.4.issuer': 'ScrumStudy',
+
+    'cert.4.date': '15 abr. 2026',
+
+    'cert.5.title': 'Six Sigma Yellow Belt Professional',
+
+    'cert.5.issuer': '6SigmaStudy',
+
+    'cert.5.date': '15 abr. 2026',
+
+    'cert.6.title': 'Tester',
+
+    'cert.6.issuer': 'Capacítate para el Empleo · 28 horas',
+
+    'cert.6.date': 'Finalizado el 4 may. 2026',
+
+    'cert.7.title': 'Evaluador de experiencia de usuario (UX)',
+
+    'cert.7.issuer': 'Capacítate para el Empleo · 24 horas',
+
+    'cert.7.date': 'Finalizado el 5 may. 2026',
+
+    'cert.8.title': 'Administración del tiempo',
+
+    'cert.8.issuer': 'Capacítate para el Empleo · 17 horas',
+
+    'cert.8.date': 'Finalizado el 21 sept. 2026',
+
+    'cert.9.title': 'Liderazgo Universitario · Líder de Servicio',
+
+    'cert.9.issuer': 'Vicerrectoría de Vida Estudiantil, UCR',
+
+    'cert.9.date': 'Trayectoria: 2022–2025 · Certificado el 30 abr. 2026',
 
     // Projects
     'projects.subtitle': 'Portafolio',
@@ -77,12 +135,12 @@ export const ui = {
 
     // Current Role
     'exp.0.dates': 'Jul 2026 — Actualidad',
-    'exp.0.role': 'Quality Assurance Functional Specialist',
+    'exp.0.role': 'Especialista en QA Funcional',
     'exp.0.place': 'Babel',
     'exp.0.i1': 'Analizo historias de usuario y criterios de aceptación para definir escenarios de prueba.',
-    'exp.0.i2': 'Diseño y ejecuto pruebas funcionales y de regresión; documento defectos y resultados en Azure DevOps.',
-    'exp.0.i3': 'Valido servicios y APIs con Postman y realizo pruebas de rendimiento con JMeter.',
-    'exp.0.i4': 'Aplico automatización de pruebas E2E con Playwright y Selenium WebDriver en C#/.NET.',
+    'exp.0.i2': 'Reviso los insumos y analizo incidencias asociadas a datos, bases de datos SQL Server u Oracle, conexiones, versiones y permisos, para identificar su origen antes de pasar la funcionalidad al equipo de UAT.',
+    'exp.0.i3': 'Diseño y ejecuto pruebas funcionales y de regresión; registro hallazgos y doy seguimiento a los defectos en Azure DevOps.',
+    'exp.0.i4': 'Valido servicios y APIs con Postman y realizo pruebas de rendimiento con JMeter.',
 
     // Experience
     'exp.subtitle': 'Trayectoria',
@@ -152,15 +210,73 @@ export const ui = {
 
     // Education
     'education.subtitle': 'Education and credentials',
-    'education.title': 'Degrees and certifications',
+    'education.title': 'Degrees, professional membership, and certifications',
     'education.degree.title': 'Bachelor\'s in Business Informatics',
     'education.degree.detail': 'University of Costa Rica (UCR)',
     'education.membership.title': 'Professional association member',
     'education.membership.detail': 'Professional Association of Informatics and Computing (CPIC)',
-    'education.cert1.title': 'ISTQB Certified Tester Foundation Level',
-    'education.cert1.detail': 'Foundation Level certification (CTFL)',
-    'education.cert2.title': 'ISTQB Certified Tester Acceptance Testing',
-    'education.cert2.detail': 'Acceptance Testing certification (CT-AcT)',
+    'education.cert1.title': 'ISTQB® Certified Tester Foundation Level (v4.0)',
+    'education.cert1.detail': 'ISTQB · Aug 3, 2026',
+    'education.cert2.title': 'ISTQB® Certified Tester Acceptance Testing (2019)',
+    'education.cert2.detail': 'ISTQB · Aug 10, 2026',
+
+    'exp.0.i5': 'Apply end-to-end test automation with Playwright and Selenium WebDriver using C#/.NET.',
+
+    'education.certifications': 'Certifications and professional development',
+
+    'cert.1.title': 'ISTQB® Certified Tester Foundation Level (v4.0)',
+
+    'cert.1.issuer': 'ISTQB',
+
+    'cert.1.date': 'Aug 3, 2026',
+
+    'cert.2.title': 'ISTQB® Certified Tester Acceptance Testing (2019)',
+
+    'cert.2.issuer': 'ISTQB',
+
+    'cert.2.date': 'Aug 10, 2026',
+
+    'cert.3.title': 'ISTQB® Certified Tester Advanced Level Test Automation Engineering (v2.0)',
+
+    'cert.3.issuer': 'ISTQB',
+
+    'cert.3.date': 'Sep 11, 2026',
+
+    'cert.4.title': 'Scrum Fundamentals Certified (SFC™)',
+
+    'cert.4.issuer': 'ScrumStudy',
+
+    'cert.4.date': 'Apr 15, 2026',
+
+    'cert.5.title': 'Six Sigma Yellow Belt Professional',
+
+    'cert.5.issuer': '6SigmaStudy',
+
+    'cert.5.date': 'Apr 15, 2026',
+
+    'cert.6.title': 'Tester',
+
+    'cert.6.issuer': 'Capacítate para el Empleo · 28 hours',
+
+    'cert.6.date': 'Completed May 4, 2026',
+
+    'cert.7.title': 'User Experience (UX) Evaluator',
+
+    'cert.7.issuer': 'Capacítate para el Empleo · 24 hours',
+
+    'cert.7.date': 'Completed May 5, 2026',
+
+    'cert.8.title': 'Time Management',
+
+    'cert.8.issuer': 'Capacítate para el Empleo · 17 hours',
+
+    'cert.8.date': 'Completed Sep 21, 2026',
+
+    'cert.9.title': 'University Leadership · Service Leader',
+
+    'cert.9.issuer': 'Student Life Office, University of Costa Rica',
+
+    'cert.9.date': 'Program: 2022–2025 · Awarded Apr 30, 2026',
 
     // Projects
     'projects.subtitle': 'Portfolio',
@@ -185,9 +301,9 @@ export const ui = {
     'exp.0.role': 'Quality Assurance Functional Specialist',
     'exp.0.place': 'Babel',
     'exp.0.i1': 'Analyze user stories and acceptance criteria to define test scenarios.',
-    'exp.0.i2': 'Design and execute functional and regression tests; document defects and results in Azure DevOps.',
-    'exp.0.i3': 'Validate services and APIs with Postman and conduct performance testing with JMeter.',
-    'exp.0.i4': 'Apply end-to-end test automation with Playwright and Selenium WebDriver using C#/.NET.',
+    'exp.0.i2': 'Review test inputs and investigate issues related to data, SQL Server or Oracle databases, connections, versions, and permissions to identify the source before handing functionality over to the UAT team.',
+    'exp.0.i3': 'Design and execute functional and regression tests; record findings and track defects in Azure DevOps.',
+    'exp.0.i4': 'Validate services and APIs with Postman and conduct performance testing with JMeter.',
 
     // Experience
     'exp.subtitle': 'Trajectory',
