@@ -2,6 +2,12 @@
 
 export const ui = {
   es: {
+    'footer.built': "Hecho con",
+    'exp.ucr': "Universidad de Costa Rica",
+    'exp.1.dates': "Jul 2025 — Dic 2025",
+    'cert.leadership': "Liderazgo",
+    'cert.course': "Curso",
+    'hero.btn.certifications': "Ver certificaciones",
     // Navigation
     'nav.about': 'Acerca de mí',
     'nav.stack': 'Tecnologías',
@@ -16,8 +22,8 @@ export const ui = {
     'hero.status': 'Actualmente en Babel',
     'hero.title1': 'QA Funcional',
     'hero.title2': 'y Automatización',
-    'hero.desc': 'Especialista de calidad de software con experiencia en pruebas funcionales y de regresión, validación de APIs y automatización E2E. Combino mi formación en desarrollo con un enfoque en entregar software confiable.',
-    'hero.btn.view': 'Ver Proyectos',
+    'hero.desc': "Especialista en QA en Babel. Diseño y ejecuto pruebas funcionales y de regresión, valido APIs y automatizo flujos de principio a fin con Playwright y Selenium.",
+    'hero.btn.view': "Ver formación",
     'hero.btn.cv': 'DESCARGAR CV',
     'hero.title3': 'Correo',
     'hero.title4': 'Teléfono',
@@ -46,8 +52,8 @@ export const ui = {
     'stack.version': 'Control de versiones',
 
     // Education
-    'education.subtitle': 'Formación y credenciales',
-    'education.title': 'Estudios, colegiatura y certificaciones',
+    'education.subtitle': "Formación y credenciales",
+    'education.title': "Estudios y colegiatura",
     'education.degree.title': 'Bachiller Universitario en Informática Empresarial',
     'education.degree.detail': 'Universidad de Costa Rica (UCR)',
     'education.membership.title': 'Miembro colegiado',
@@ -165,6 +171,12 @@ export const ui = {
     'btn.top': 'Volver al inicio',
   },
   en: {
+    'footer.built': "Built with",
+    'exp.ucr': "University of Costa Rica",
+    'exp.1.dates': "Jul 2025 — Dec 2025",
+    'cert.leadership': "Leadership",
+    'cert.course': "Course",
+    'hero.btn.certifications': "View certifications",
     // Navigation
     'nav.about': 'About Me',
     'nav.stack': 'Tech Stack',
@@ -179,8 +191,8 @@ export const ui = {
     'hero.status': 'Currently at Babel',
     'hero.title1': 'Functional QA',
     'hero.title2': '& Test Automation',
-    'hero.desc': 'Software quality specialist experienced in functional and regression testing, API validation, and end-to-end test automation. I combine a software development background with a focus on delivering reliable software.',
-    'hero.btn.view': 'View Projects',
+    'hero.desc': "I’m a QA specialist at Babel. I design and run functional and regression tests, validate APIs, and automate end-to-end workflows with Playwright and Selenium.",
+    'hero.btn.view': "View education",
     'hero.btn.cv': 'DOWNLOAD CV',
     'hero.title3': 'Email',
     'hero.title4': 'Phone',
@@ -209,8 +221,8 @@ export const ui = {
     'stack.version': 'Version Control',
 
     // Education
-    'education.subtitle': 'Education and credentials',
-    'education.title': 'Degrees, professional membership, and certifications',
+    'education.subtitle': "Education and credentials",
+    'education.title': "Education and professional membership",
     'education.degree.title': 'Bachelor\'s in Business Informatics',
     'education.degree.detail': 'University of Costa Rica (UCR)',
     'education.membership.title': 'Professional association member',
