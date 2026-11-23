@@ -16,7 +16,6 @@ export const ui = {
     'nav.education': 'Formación',
     'nav.contact': 'Contacto',
     'nav.email': 'Enviar Email',
-    'nav.whatsapp': 'WhatsApp',
 
     // Hero Section
     'hero.status': 'Actualmente en Babel',
@@ -26,7 +25,6 @@ export const ui = {
     'hero.btn.view': "Ver formación",
     'hero.btn.cv': 'DESCARGAR CV',
     'hero.title3': 'Correo',
-    'hero.title4': 'Teléfono',
 
     // About Me
     'about.subtitle': 'Perfil Profesional',
@@ -185,7 +183,6 @@ export const ui = {
     'nav.education': 'Education',
     'nav.contact': 'Contact',
     'nav.email': 'Send Email',
-    'nav.whatsapp': 'WhatsApp',
 
     // Hero Section
     'hero.status': 'Currently at Babel',
@@ -195,7 +192,6 @@ export const ui = {
     'hero.btn.view': "View education",
     'hero.btn.cv': 'DOWNLOAD CV',
     'hero.title3': 'Email',
-    'hero.title4': 'Phone',
 
     // About Me
     'about.subtitle': 'Professional Profile',
