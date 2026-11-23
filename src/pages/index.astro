@@ -12,10 +12,10 @@ import Layout from "../layout/Layout.astro";
 
      <div class="hidden md:flex gap-10 text-xs uppercase tracking-[0.2em] font-medium text-slate-400">
       <a data-key="nav.about" href="#aboutMe" class="hover:text-purple-400 transition-colors">Acerca de mí</a>
+      <a data-key="nav.education" href="#formacion" class="hover:text-purple-400 transition-colors">Formación</a>
       <a data-key="nav.stack" href="#stack" class="hover:text-purple-400 transition-colors">Tecnologías</a>
       <a data-key="nav.projects" href="#proyectos" class="hover:text-purple-400 transition-colors">Proyectos</a>
       <a data-key="nav.experience" href="#experiencia" class="hover:text-purple-400 transition-colors">Experiencia</a>
-      <a data-key="nav.education" href="#formacion" class="hover:text-purple-400 transition-colors">Formación</a>
     </div>
 
     <div class="relative inline-block text-left" id="dropdown-wrapper">
@@ -75,6 +75,11 @@ import Layout from "../layout/Layout.astro";
           <span data-key="nav.about">Acerca de mí</span>
         </a>
 
+        <a href="#formacion" class="mobile-link group flex items-center gap-4 text-sm font-bold tracking-[0.2em] uppercase text-white/70 hover:text-white transition-all">
+        <div class="w-1.5 h-1.5 rounded-full bg-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        <span data-key="nav.education">Formación</span>
+        </a>
+
         <a href="#stack" class="mobile-link group flex items-center gap-4 text-sm font-bold tracking-[0.2em] uppercase text-white/70 hover:text-white transition-all">
         <div class="w-1.5 h-1.5 rounded-full bg-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
         <span data-key="nav.stack">Tecnologías</span>
@@ -90,10 +95,7 @@ import Layout from "../layout/Layout.astro";
         <span data-key="nav.experience">Experiencia</span>
         </a>
 
-        <a href="#formacion" class="mobile-link group flex items-center gap-4 text-sm font-bold tracking-[0.2em] uppercase text-white/70 hover:text-white transition-all">
-        <div class="w-1.5 h-1.5 rounded-full bg-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-        <span data-key="nav.education">Formación</span>
-        </a>
+
 
         <div class="w-full flex flex-col gap-6 items-end border-t border-white/10 pt-8 mt-4">
           <p class="text-[10px] uppercase tracking-[0.3em] text-slate-500 mb-2">Contacto</p>
@@ -221,7 +223,7 @@ import Layout from "../layout/Layout.astro";
     </section> 
 
     <section id="formacion" class="py-24 px-6 max-w-6xl mx-auto border-t border-white/5">
-      <h2 data-key="education.subtitle" class="text-xs uppercase tracking-[0.5em] text-purple-500 font-bold mb-4">Formación y credenciales</h2>
+      <h2 data-key="education.subtitle" class="text-xs uppercase tracking-[0.5em] text-purple-500 font-bold mb-4">Formación</h2>
       <h3 data-key="education.title" class="text-4xl font-bold mb-12 tracking-tighter text-white">Estudios, colegiatura y certificaciones<span class="text-purple-500">.</span></h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-16">
         <article class="p-6 md:p-8 bg-white/2 border border-white/5 rounded-3xl hover:border-purple-500/30 transition-colors">
